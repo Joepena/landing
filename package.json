@@ -50,8 +50,7 @@
     "stylelint": "^9.4.0",
     "uglify-es": "^3.3.10"
   },
-  "homepage": "https://bitbucket.org/pasqualevitiello/blue#readme",
-  "main": ".eslintrc.js",
+  "main": "server.js",
   "dependencies": {
     "express": "^4.16.4"
   }
