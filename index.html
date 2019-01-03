@@ -67,14 +67,19 @@
 						<div class="hero-copy">
 	                        <h1 class="hero-title mt-0 is-revealing" id="scroll-target">A Platform For Information Discovery</h1>
 	                        <p class="hero-paragraph is-revealing">Organize and search information across all your applications, such as: Gmail, Jira, Git, Confluence, and more.</p>
-                          <div class="hero-form field field-grouped" id="email-form">
+                          <form class="hero-form field field-grouped" action="https://trybiome.us7.list-manage.com/subscribe/post?u=351d0b55cb2446debd51707e8&amp;id=011b9788a4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
             								<div class="control control-expanded">
-            									<input class="input" type="email" name="email" placeholder="Your best email&hellip;">
+            									<input class="input" type="email" name="EMAIL" id="mce-EMAIL" placeholder="Your best email&hellip;">
             								</div>
+                            <div id="mce-responses" class="clear">
+                          		<div class="response" id="mce-error-response" style="display:none"></div>
+                          		<div class="response" id="mce-success-response" style="display:none"></div>
+                          	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_351d0b55cb2446debd51707e8_011b9788a4" tabindex="-1" value=""></div>
             								<div class="control">
-            									<a class="button button-primary button-block" href="#">Early access</a>
+            									<input type="submit" class="button button-primary button-block" name="subscribe" id="mc-embedded-subscribe" value="Early access">
             								</div>
-            							</div>
+            							</form>
 						</div>
 						<div class="hero-illustration">
 						</div>
@@ -270,11 +275,18 @@
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
-<script>$("#go-to-form").click(function() {
+  <script>$("#go-to-form").click(function() {
     $([document.documentElement, document.body]).animate({
         scrollTop: $("#scroll-target").offset().top
     }, 1000);
-});</script>
+      });
+    </script>
+    <script type="text/javascript">
+      $( '#$mc-embedded-subscribe-form' ).submit(function() {
+        fbq('track', 'Lead');
+      });
+      </script>
     <script src="dist/js/main.min.js"></script>
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 </body>
 </html>
