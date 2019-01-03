@@ -43,6 +43,10 @@
 .hero-paragraph {
     margin-bottom: 32px;
 }
+.hero-form {
+	max-width: 440px;
+	margin: 0 auto;
+}
 
 @include media( '>medium' ) {
 
@@ -54,6 +58,10 @@
 			display: block;
 		}
 
+    .hero-form {
+      margin: 0;
+    }
+    
 		.hero-right-decoration {
 			width: 1440px;
 			height: 640px;
